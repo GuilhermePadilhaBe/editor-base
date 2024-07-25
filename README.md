@@ -1,4 +1,4 @@
-# Design System da Clickmax
+# Editor de Emails da Clickmax
 
 ## O que tem nesse monorepo?
 

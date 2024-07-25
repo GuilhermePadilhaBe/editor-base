@@ -1,0 +1,13 @@
+{
+	"eslint.workingDirectories": [
+		{
+			"mode": "auto"
+		}
+	],
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"tailwindCSS.experimental.classRegex": [
+		["tv\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+		"/\\*\\s*tw\\s*\\*/\\s*'([^']*)'",
+		"/\\*\\s*tw\\s*\\*/\\s*\"([^\"]*)\""
+	]
+}

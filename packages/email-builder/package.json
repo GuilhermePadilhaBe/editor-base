@@ -1,0 +1,85 @@
+{
+	"name": "@clickmax/email-builder",
+	"version": "0.0.1",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"license": "MIT",
+	"scripts": {
+		"dev": "concurrently 'pnpm:dev:*'",
+		"dev:demo": "storybook dev -p 6006",
+		"build": "vite build",
+		"build:lib": "tsup",
+		"test": "vitest",
+		"coverage": "vitest run --coverage",
+		"lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+		"format": "prettier --write .",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build",
+		"chromatic": "npx chromatic --project-token=chpt_002096cacbba0cd"
+	},
+	"devDependencies": {
+		"@storybook/addon-a11y": "^7.4.6",
+		"@storybook/addon-essentials": "^7.4.6",
+		"@storybook/addon-interactions": "^7.4.6",
+		"@storybook/addon-links": "^7.4.6",
+		"@storybook/addon-onboarding": "^1.0.8",
+		"@storybook/blocks": "^7.4.6",
+		"@storybook/manager-api": "^7.4.6",
+		"@storybook/react": "^7.4.6",
+		"@storybook/react-vite": "^7.4.6",
+		"@storybook/testing-library": "^0.2.2",
+		"@storybook/theming": "^7.4.6",
+		"@testing-library/jest-dom": "^6.1.3",
+		"@testing-library/react": "^14.0.0",
+		"@testing-library/user-event": "^14.5.1",
+		"@turbo/gen": "^1.10.12",
+		"@types/jest": "^29.5.5",
+		"@types/node": "^20.5.2",
+		"@types/react": "^18.2.0",
+		"@types/react-dom": "^18.2.0",
+		"@types/tinycolor2": "^1.4.4",
+		"@vitejs/plugin-react": "^4.1.0",
+		"@vitest/coverage-istanbul": "^0.34.6",
+		"autoprefixer": "^10.4.16",
+		"concurrently": "^8.2.1",
+		"esbuild-style-plugin": "^1.6.2",
+		"eslint-config-custom": "workspace:*",
+		"eslint-plugin-jsx-a11y": "^6.7.1",
+		"eslint-plugin-react": "^7.33.2",
+		"eslint-plugin-react-camel-case": "^1.1.2",
+		"eslint-plugin-storybook": "^0.6.15",
+		"globby": "^14.0.1",
+		"happy-dom": "^12.9.1",
+		"storybook": "^7.4.6",
+		"tailwindcss": "^3.4.6",
+		"tinycolor2": "^1.6.0",
+		"tsconfig": "workspace:*",
+		"vite": "^4.4.11",
+		"vite-plugin-dts": "^3.6.0",
+		"vitest": "^0.34.6"
+	},
+	"dependencies": {
+		"classnames": "^2.5.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"tailwind-merge": "^1.14.0",
+		"tailwind-variants": "^0.1.14"
+	},
+	"peerDependencies": {
+		"react": ">=18.0.0",
+		"react-dom": ">=18.0.0"
+	},
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"default": "./dist/index.js"
+		},
+		"./button": {
+			"types": "./dist/button/index.d.ts",
+			"default": "./dist/button/index.js"
+		}
+	}
+}

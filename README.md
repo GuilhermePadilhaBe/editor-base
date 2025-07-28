@@ -1,4 +1,4 @@
-# Editor de Emails da Clickmax
+# Editor de Emails
 
 ## O que tem nesse monorepo?
 
